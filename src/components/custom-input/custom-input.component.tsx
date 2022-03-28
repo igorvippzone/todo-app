@@ -4,7 +4,9 @@ import {InputContainer} from "./custom-input.styles";
 const CustomItem: FC = () => {
 
     return(
-        <InputContainer placeholder='Добавить новую задачу в категорию "Все"' />
+        <InputContainer
+            placeholder='Добавить новую задачу в категорию "Все"'
+        />
     )
 }
 

@@ -1,12 +1,13 @@
 import React, {FC} from "react";
 
 import { SideMenuContainer } from "./side-menu.styles";
-import Categories from "../categories/categories.component";
+import CustomList from "../custom-list/custom-list.component";
+import ListCategories from "../list-categories/list-categories.component";
+
 
 const SideMenu: FC = () =>(
-    <SideMenuContainer>
-        {/*<div style={{paddingTop:120, paddingBottom: 20}}><h2>Категории</h2></div>*/}
-        <Categories />
+    <SideMenuContainer className='hidden'>
+        <ListCategories />
     </SideMenuContainer>
 )
 

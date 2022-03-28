@@ -1,16 +1,24 @@
 import React, {FC} from "react";
 
-import { MainContent } from './main.styles'
+import menuSVG from '../../assets/Menu.svg'
+
+import {Button, MainContent, WrapperContainer,TitleContainer} from './main.styles'
 import CustomInput from "../custom-input/custom-input.component";
+
 import ListTasks from "../list-tasks/list-tasks.component";
+
 
 const Main: FC = () => (
     <MainContent>
-        <h1>
-            Все задачи
-        </h1>
-        <CustomInput />
-        <ListTasks />
+        <Button><img src={menuSVG} /></Button>
+        <WrapperContainer>
+            <TitleContainer>
+                Все задачи
+            </TitleContainer>
+            <CustomInput />
+            <ListTasks />
+        </WrapperContainer>
+
     </MainContent>
 )
 
